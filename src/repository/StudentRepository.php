@@ -1,13 +1,13 @@
 <?php
 
 namespace src\repository;
-require 'src\init.php';
 
 use PDO;
 use PDOException;
 use src\mapper\StudentMapper;
 use src\model\Student;
 
+$config = parse_ini_file('config.ini', true);
 class StudentRepository {
     public function __construct(private PDO $db) {}
 

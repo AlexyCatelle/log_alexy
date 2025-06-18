@@ -2,11 +2,12 @@
 
 namespace src\service;
 
-require 'src\init.php';
+require 'src\config.ini';
 
 use src\model\Student;
 use src\repository\StudentRepository;
 
+$config = parse_ini_file('config.ini', true);
 class StudentService
 {
     // Définition des regex à utiliser sous forme de constantes

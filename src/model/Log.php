@@ -1,8 +1,8 @@
 <?php
 
 namespace src\model;
-require 'src\init.php';
 
+$config = parse_ini_file('config.ini', true);
 class Log
 {
 

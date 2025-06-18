@@ -1,7 +1,7 @@
 <?php
 
 require './vendor/autoload.php';
-require 'src\init.php';
+require 'src\config.ini';
 
 use src\repository\StudentRepository;
 use src\service\StudentService;

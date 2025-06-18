@@ -2,7 +2,7 @@
 
 namespace src\mapper;
 
-require 'src\init.php';
+$config = parse_ini_file('config.ini', true);
 
 use src\model\Student;
 
