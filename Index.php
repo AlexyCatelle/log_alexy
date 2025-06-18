@@ -1,10 +1,13 @@
 <?php
 
 require './vendor/autoload.php';
-require 'src\config.ini';
+$config = parse_ini_file('config.ini', true);
 
 use src\repository\StudentRepository;
 use src\service\StudentService;
+
+//test ini
+//print($config['TEST']);
 
 // Affichage du menu
 function menu(): void
