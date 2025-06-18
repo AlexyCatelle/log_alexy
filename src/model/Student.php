@@ -2,7 +2,6 @@
 
 namespace src\model;
 
-$config = parse_ini_file('config.ini', true);
 class Student{
     public function __construct(
         public ?int $id, 
